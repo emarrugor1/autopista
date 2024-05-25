@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+}
+
+.road {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lane {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 50px;
+    background-image: url('autopista.png'); /* Cambia 'autopista.jpg' por la URL o la ruta de tu imagen de fondo */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.auto {
+    width: 50px;
+    height: 50px;
+    background-image: url('car.png'); /* Cambia esto a la URL de la imagen del carrito */
+    background-size: cover;
+    margin-right: 10px;
+    position: relative;
+}
+
+.semaforo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.light {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 5px 0;
+    background-color: grey;
+}
+
+.red.active {
+    background-color: red;
+}
+
+.yellow.active {
+    background-color: yellow;
+}
+
+.green.active {
+    background-color: green;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}

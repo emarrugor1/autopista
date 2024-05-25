@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cola de Espera en Semáforo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="road">
+        <div class="semaforo">
+            <div class="light red"></div>
+            <div class="light yellow"></div>
+            <div class="light green"></div>
+        </div>
+        <div class="lane" id="lane">
+            <!-- Los autos se añadirán aquí dinámicamente -->
+        </div>
+    </div>
+    <div class="controls">
+        <button onclick="llegarAuto()">Llegar Auto</button>
+        <button onclick="cambiarSemaforo()">Cambiar Semáforo</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
